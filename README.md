@@ -36,3 +36,8 @@ grounding, format validity, or task quality drops beyond tolerance.
 The project includes 32 prompt-evaluation rows in
 [`reports/full_prompt_results.csv`](reports/full_prompt_results.csv) and a report
 in [`reports/full_prompt_analysis.md`](reports/full_prompt_analysis.md).
+
+## Prompt Leaderboard
+
+The suite can summarize prompt variants into a small leaderboard using pass rate,
+grounding, and brevity metrics.
