@@ -1,0 +1,40 @@
+{
+  "kind": "prompt_robustness",
+  "title": "Prompt Robustness Suite V2",
+  "report": "prompt_robustness_v2_research_report.md",
+  "dataset_path": "data/processed/classification_examples.jsonl",
+  "text_field": "text",
+  "label_field": "label",
+  "positive_labels": [
+    "1",
+    "unsafe",
+    "2"
+  ],
+  "max_rows_full": 25000,
+  "max_rows_smoke": 800,
+  "experiments": [
+    {
+      "id": "baseline_policy_a",
+      "method": "policy_a"
+    },
+    {
+      "id": "strict_policy_b",
+      "method": "policy_b"
+    },
+    {
+      "id": "detector_policy_c",
+      "method": "policy_c"
+    },
+    {
+      "id": "threshold_sweep",
+      "method": "threshold"
+    }
+  ],
+  "ablations": [
+    "casing",
+    "typoglycemia",
+    "base64_wrapper",
+    "instruction_sandwich"
+  ],
+  "discussion": "Prompt robustness is regression testing. V2 measures attack recall and benign pass rate under perturbations, then promotes the best policy variant only if it clears both safety and usefulness gates."
+}
