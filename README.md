@@ -25,3 +25,8 @@ This project frames prompt engineering as versioned, tested behavior rather than
 - Prompt variants: [`examples/prompt_variants.json`](examples/prompt_variants.json)
 - Results: [`reports/prompt_ab_results.csv`](reports/prompt_ab_results.csv)
 - Analysis: [`reports/prompt_ab_analysis.md`](reports/prompt_ab_analysis.md)
+
+## Regression Gates
+
+The suite includes metric regression gates so prompt variants can fail CI when
+grounding, format validity, or task quality drops beyond tolerance.
