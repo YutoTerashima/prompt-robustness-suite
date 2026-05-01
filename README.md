@@ -41,3 +41,9 @@ in [`reports/full_prompt_analysis.md`](reports/full_prompt_analysis.md).
 
 The suite can summarize prompt variants into a small leaderboard using pass rate,
 grounding, and brevity metrics.
+## Real Public Dataset Experiment
+
+`reports/real_prompt_injection_ab_eval.md` evaluates two prompt-injection detection variants on a
+real 320-row sample from
+[S-Labs/prompt-injection-dataset](https://huggingface.co/datasets/S-Labs/prompt-injection-dataset),
+turning prompt robustness into a measurable regression test.

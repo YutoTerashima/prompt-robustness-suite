@@ -1,0 +1,14 @@
+{
+  "source_dataset": "S-Labs/prompt-injection-dataset",
+  "rows": 320,
+  "v1": {
+    "precision": 0.778,
+    "recall": 0.107,
+    "f1": 0.188
+  },
+  "v2": {
+    "precision": 0.635,
+    "recall": 0.252,
+    "f1": 0.361
+  }
+}
