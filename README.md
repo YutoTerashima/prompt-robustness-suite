@@ -19,3 +19,9 @@ should be tested like behavior-defining code.
 ## Portfolio Notes
 
 This project frames prompt engineering as versioned, tested behavior rather than intuition.
+
+## Experiment Artifacts
+
+- Prompt variants: [`examples/prompt_variants.json`](examples/prompt_variants.json)
+- Results: [`reports/prompt_ab_results.csv`](reports/prompt_ab_results.csv)
+- Analysis: [`reports/prompt_ab_analysis.md`](reports/prompt_ab_analysis.md)

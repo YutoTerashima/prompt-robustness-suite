@@ -1,0 +1,4 @@
+prompt,mean_score,failures,dominant_failure
+v1,0.5,6,missing_evidence
+v2,1.0,0,none
+v3,0.88,1,too_verbose
