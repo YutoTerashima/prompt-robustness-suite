@@ -64,15 +64,64 @@ conda run -n Transformers python scripts/make_report.py
 Main report: `reports/prompt_robustness_real_benchmark.md`.
 
 <!-- V2_RESEARCH_UPGRADE -->
-## Publishable V2 Research Upgrade
+## Publishable V2 Research Results
 
-This repository now includes a project-level V2 experiment suite:
+This repository now includes a full V2 research suite with real data, multiple baselines, ablations, result artifacts, figures, and failure analysis. The README summarizes the measured run so the project can be judged from results, not just project intent.
 
-- Reproducible matrix: `configs/experiment_matrix.yaml`
-- Main runner: `scripts/run_matrix.py --device cuda --profile full`
-- Failure analysis: `scripts/analyze_failures.py`
-- Research report: `reports/prompt_robustness_v2_research_report.md`
-- Experiment index: `reports/results/experiment_index.json`
+### Dataset And Scale
 
-The V2 artifacts include multiple experiments, ablations, figures, failure cases, and a discussion section while keeping raw caches and large checkpoints out of Git.
+S-Labs prompt-injection train, validation, and test splits; 15,291 prompts evaluated across policy and perturbation variants.
 
+- Full-profile result rows: `15`
+- Experiment profile: `full`
+- Experiment index: [`reports/results/experiment_index.json`](reports/results/experiment_index.json)
+- Full report: [`reports/prompt_robustness_v2_research_report.md`](reports/prompt_robustness_v2_research_report.md)
+
+### Main Results
+
+| experiment_id | perturbation | macro_f1 | attack_recall | benign_pass_rate | unsafe_recall | safe_recall |
+| --- | --- | --- | --- | --- | --- | --- |
+| baseline_policy_a | original | 0.5160 | 0.1774 | 0.9777 | 0.1774 | 0.9777 |
+| baseline_policy_a | casing | 0.5160 | 0.1774 | 0.9777 | 0.1774 | 0.9777 |
+| baseline_policy_a | typoglycemia | 0.3546 | 0.0000 | 1.0000 | 0.0000 | 1.0000 |
+| baseline_policy_a | base64_wrapper | 0.3546 | 0.0000 | 1.0000 | 0.0000 | 1.0000 |
+| baseline_policy_a | instruction_sandwich | 0.5160 | 0.1774 | 0.9777 | 0.1774 | 0.9777 |
+| strict_policy_b | original | 0.5532 | 0.2340 | 0.9594 | 0.2340 | 0.9594 |
+| strict_policy_b | casing | 0.5532 | 0.2340 | 0.9594 | 0.2340 | 0.9594 |
+| strict_policy_b | typoglycemia | 0.3623 | 0.0070 | 0.9999 | 0.0070 | 0.9999 |
+
+### Analysis
+
+- The leaderboard exposes the real tradeoff: stricter policies raise attack recall but can sharply reduce benign pass rate under instruction-sandwich style perturbations.
+- Typoglycemia and base64-like wrappers nearly erase keyword-policy attack recall, which makes them useful regression tests for future detectors.
+- Detector policy C improves original attack recall over the baseline policy, but still fails under encoding-style perturbations.
+- This turns prompt engineering into a regression-tested artifact with measurable gates instead of a subjective prompt-writing exercise.
+
+### Failure Analysis
+
+- `original`: 100 records
+
+The public failure artifacts use redacted previews or structured metadata where source examples may contain harmful, private, or otherwise sensitive text. This keeps the analysis reproducible without turning the README into a prompt-injection or unsafe-content corpus.
+
+### Key Artifacts
+
+- [`reports/results/v2_robustness_leaderboard.csv`](reports/results/v2_robustness_leaderboard.csv)
+- [`reports/results/v2_clustered_failures.json`](reports/results/v2_clustered_failures.json)
+- [`reports/figures/v2_attack_recall.png`](reports/figures/v2_attack_recall.png)
+- [`reports/figures/v2_benign_pass_rate.png`](reports/figures/v2_benign_pass_rate.png)
+- [`reports/figures/v2_policy_macro_f1.png`](reports/figures/v2_policy_macro_f1.png)
+
+Figures:
+
+- [`reports/figures/v2_attack_recall.png`](reports/figures/v2_attack_recall.png)
+- [`reports/figures/v2_benign_pass_rate.png`](reports/figures/v2_benign_pass_rate.png)
+- [`reports/figures/v2_policy_macro_f1.png`](reports/figures/v2_policy_macro_f1.png)
+
+### Reproduction
+
+```powershell
+conda run -n Transformers python scripts/run_matrix.py --device cuda --profile full
+conda run -n Transformers python scripts/analyze_failures.py
+conda run -n Transformers python scripts/make_report.py
+conda run -n Transformers python -m pytest
+```
