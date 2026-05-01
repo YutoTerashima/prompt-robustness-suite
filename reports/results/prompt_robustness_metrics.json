@@ -1,0 +1,41 @@
+{
+  "device": {
+    "requested_device": "cuda",
+    "actual_device": "cuda",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 5090 Laptop GPU",
+    "torch_version": "2.10.0+cu128",
+    "cuda_runtime": "12.8"
+  },
+  "classifier_macro_f1": 0.6395,
+  "variants": [
+    {
+      "variant": "original",
+      "precision": 0.6721,
+      "recall": 0.2662,
+      "false_positive": 20,
+      "false_negative": 113
+    },
+    {
+      "variant": "uppercase",
+      "precision": 0.6721,
+      "recall": 0.2662,
+      "false_positive": 20,
+      "false_negative": 113
+    },
+    {
+      "variant": "roleplay_wrapper",
+      "precision": 0.6721,
+      "recall": 0.2662,
+      "false_positive": 20,
+      "false_negative": 113
+    },
+    {
+      "variant": "hidden_instruction",
+      "precision": 0.401,
+      "recall": 1.0,
+      "false_positive": 230,
+      "false_negative": 0
+    }
+  ]
+}

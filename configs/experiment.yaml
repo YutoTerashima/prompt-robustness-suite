@@ -1,0 +1,13 @@
+{
+  "kind": "robustness",
+  "dataset": "S-Labs/prompt-injection-dataset",
+  "config": "default",
+  "split": "train",
+  "text_fields": [
+    "text"
+  ],
+  "label_expr": "label",
+  "report": "prompt_robustness_real_benchmark.md",
+  "title": "Prompt Robustness Real Benchmark",
+  "description": "Perturbation robustness test on real prompt-injection prompts."
+}

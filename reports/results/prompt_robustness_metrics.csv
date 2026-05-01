@@ -1,0 +1,5 @@
+variant,precision,recall,false_positive,false_negative
+original,0.6721,0.2662,20,113
+uppercase,0.6721,0.2662,20,113
+roleplay_wrapper,0.6721,0.2662,20,113
+hidden_instruction,0.401,1.0,230,0
