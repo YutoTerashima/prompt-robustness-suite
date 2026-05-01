@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "prompt-robustness-suite"
+authors:
+  - family-names: "Terashima"
+    given-names: "Yuto"
+date-released: "2026-05-02"
+repository-code: "https://github.com/YutoTerashima/prompt-robustness-suite"
+contact:
+  - type: email
+    value: "yutoterashima4@gmail.com"
