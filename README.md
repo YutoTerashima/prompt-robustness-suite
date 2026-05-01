@@ -30,3 +30,9 @@ This project frames prompt engineering as versioned, tested behavior rather than
 
 The suite includes metric regression gates so prompt variants can fail CI when
 grounding, format validity, or task quality drops beyond tolerance.
+
+## Full Prompt Suite
+
+The project includes 32 prompt-evaluation rows in
+[`reports/full_prompt_results.csv`](reports/full_prompt_results.csv) and a report
+in [`reports/full_prompt_analysis.md`](reports/full_prompt_analysis.md).
