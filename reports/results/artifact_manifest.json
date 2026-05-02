@@ -1,0 +1,427 @@
+{
+  "repo": "prompt-robustness-suite",
+  "generated_at_utc": "2026-05-02T07:25:23.777228+00:00",
+  "git_commit": "b8e933a",
+  "artifacts": [
+    {
+      "path": "configs/experiment.yaml",
+      "kind": "configuration",
+      "size_bytes": 386,
+      "sha256": "809e29fba130e5c6a7a34766bc3ac0ef76efbe81b65094184b1838805bba5e36",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "configs/experiment_matrix.yaml",
+      "kind": "configuration",
+      "size_bytes": 1031,
+      "sha256": "e02348f542bac49be7118bbcd5068599ec71ecfd7b2fa2a07a57ff53bb49d381",
+      "review_use": "experiment or model configuration"
+    },
+    {
+      "path": "reports/figures/prompt_robustness_variants.png",
+      "kind": "figure",
+      "size_bytes": 30813,
+      "sha256": "16f5be02e21dfca691dd1f579375dd741fbfa4c79c472c622ace83a490db29e2",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/top_tier_review_scores.png",
+      "kind": "figure",
+      "size_bytes": 45628,
+      "sha256": "47b38d262d2b1cb67988f5070a94b0b658939f8c7808bddcbebbeceb4f6be722",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_attack_recall.png",
+      "kind": "figure",
+      "size_bytes": 61797,
+      "sha256": "2e891df7ba4fa993505061aa9d5b4c8e2f9760443980dea2e1c7868d954dd435",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_benign_pass_rate.png",
+      "kind": "figure",
+      "size_bytes": 61919,
+      "sha256": "dce05ecb81feddca40f8374babf953356b34e9314ed6e26eea2fbaccd2d76e28",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/figures/v2_policy_macro_f1.png",
+      "kind": "figure",
+      "size_bytes": 49827,
+      "sha256": "6919081ed0f57a9289069d47b04f52243715ff263118cb91acd570eaf3814d1a",
+      "review_use": "visual result analysis"
+    },
+    {
+      "path": "reports/full_prompt_results.csv",
+      "kind": "metric_table",
+      "size_bytes": 1081,
+      "sha256": "54cc1807e06e4b903fd71cba63d102239bfa786fab37ea8fa1179962cd18a034",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/prompt_ab_results.csv",
+      "kind": "metric_table",
+      "size_bytes": 110,
+      "sha256": "cabb89f62255be94cd77e1bd18e939c9a35778fe22437bd6a0fe2beb4b397859",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/results/claim_evidence_matrix.csv",
+      "kind": "metric_table",
+      "size_bytes": 1483,
+      "sha256": "6a0cf392f4a9e450bf7ba1384c98b96ca5edc16b4fd7999d8deac7370acaf6b1",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/prompt_robustness_metrics.csv",
+      "kind": "metric_table",
+      "size_bytes": 199,
+      "sha256": "a7864ef6ccfbe30fedd1db1b092ca2612d0748c784f509a4a19ae48807c94241",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_robustness_leaderboard.csv",
+      "kind": "metric_table",
+      "size_bytes": 3137,
+      "sha256": "16e59302189c9e0ecf44e5ad38f37bca9dd0705c35a13b102d7dde6488ea2f4d",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "other",
+      "size_bytes": 435,
+      "sha256": "0eb2680cab3cbd2149e692ff1576462dacb37fbeb73527bdee01add2bf23b9a6",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "README.md",
+      "kind": "report_or_docs",
+      "size_bytes": 7539,
+      "sha256": "4db9037930b98e4f0ca0ffc43711812574bc9a09229dcd33c47c061a554e3f8d",
+      "review_use": "first-screen reviewer orientation"
+    },
+    {
+      "path": "docs/method.md",
+      "kind": "report_or_docs",
+      "size_bytes": 100,
+      "sha256": "dc6ce446bdd69d7bcb0a179e6066a5c743351c4d42c995cb3e4700e605e4c260",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "docs/research_brief.md",
+      "kind": "report_or_docs",
+      "size_bytes": 544,
+      "sha256": "cd1d50abcbf0e0d75e1b7fb2cfed70658b9a00f394c8cdb7acd3df529c6094f4",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "docs/top_tier_reviewer_packet.md",
+      "kind": "report_or_docs",
+      "size_bytes": 3540,
+      "sha256": "6cdb9690a629988922390e52ece3800bf397b4f26699b7149e474da36f2af9c9",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/ab_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 80,
+      "sha256": "6be2a33963a0782a03eaba538f8c593054c9b4f2e327c0e1c4ef807335511c6b",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/full_prompt_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 1021,
+      "sha256": "b64a2d5d9a59485f56f439b8fc79248dd49592304e11fc4a1996d5c1c18d708b",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/maturity_review.md",
+      "kind": "report_or_docs",
+      "size_bytes": 7312,
+      "sha256": "469bccbe599dcfa22b6c5f99a63119e2f2171d92dc5cb7bf471fcb7c32473546",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/prompt_ab_analysis.md",
+      "kind": "report_or_docs",
+      "size_bytes": 547,
+      "sha256": "183329c4547bb28e1183781d4788b22a9243bdbab43e94ec90d746254516a12c",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/prompt_ab_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 219,
+      "sha256": "e72b40dd78e3a3ae240bde2df87b7ffb17b6e584558830ec6960b43cc1aa0ec7",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/prompt_robustness_real_benchmark.md",
+      "kind": "report_or_docs",
+      "size_bytes": 2255,
+      "sha256": "46ac1dcefc9a7fb6db8c6495496406d69a25ef35946eaff3dd2c6fc779cf1ac0",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/prompt_robustness_v2_research_report.md",
+      "kind": "report_or_docs",
+      "size_bytes": 6754,
+      "sha256": "735ac8e2d6d7fb611211e587befc4df001f6a97144c83f8c3708bb25910a50d7",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "reports/real_prompt_injection_ab_eval.md",
+      "kind": "report_or_docs",
+      "size_bytes": 520,
+      "sha256": "62ea382e4072367bb1ff2624fddaa0d974df7ed0f5df93a84c171a4a0e4775ee",
+      "review_use": "written analysis and limitations"
+    },
+    {
+      "path": "scripts/analyze_failures.py",
+      "kind": "source_or_test",
+      "size_bytes": 1454,
+      "sha256": "73bc120f9b39bca7127b96cc30710529a0c277a888cbcf7ab1aaff7c40bd0b09",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/download_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 284,
+      "sha256": "0fd00697a41c45db310f463dd8f5967d3e749c657a6985c578b0ee43837dbd96",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/gpu_experiment.py",
+      "kind": "source_or_test",
+      "size_bytes": 31340,
+      "sha256": "37b2eeade55e59da7b77ab557acc72a3f68fb4746220f136d7039d8281cc5a66",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/make_report.py",
+      "kind": "source_or_test",
+      "size_bytes": 3469,
+      "sha256": "f67806488b727a69a782bc723859362850baf512a7b45c7ee04e3e598bedab62",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/preprocess_data.py",
+      "kind": "source_or_test",
+      "size_bytes": 223,
+      "sha256": "6295125239bb4992208c6613fae4c6af1325bb2e34c03b52cc653de13aed7fbf",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "kind": "source_or_test",
+      "size_bytes": 82,
+      "sha256": "20850eb44719474b29842436f5b147604f2ceaf5b8356cf6630b164da63d3792",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "scripts/run_matrix.py",
+      "kind": "source_or_test",
+      "size_bytes": 40862,
+      "sha256": "883126afc52d318b5db78ecb685adc8f2545cc7f7567b55391db241f190b858d",
+      "review_use": "reproduction entrypoint"
+    },
+    {
+      "path": "src/prompt_robustness_suite/__init__.py",
+      "kind": "source_or_test",
+      "size_bytes": 32,
+      "sha256": "7030b17f899770428cc7d10d3f86aaf148d5753ec09bcb283ba2cce3673afbda",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/analysis.py",
+      "kind": "source_or_test",
+      "size_bytes": 462,
+      "sha256": "fc8795837ac93286435aef9f7def00c81d89d7e3222fbfc38afc411a90453723",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/gates.py",
+      "kind": "source_or_test",
+      "size_bytes": 446,
+      "sha256": "98a29b4894a14d00008ae5cb5aa82b208abe6f704b71eff5e69f7ec11a77ea68",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/perturbations.py",
+      "kind": "source_or_test",
+      "size_bytes": 2561,
+      "sha256": "061abf1562099d1eb2e0b88da0b1a8b6f6e7c25e7ca42d2fca7837b5e7f0b40e",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/policy_variants.py",
+      "kind": "source_or_test",
+      "size_bytes": 2519,
+      "sha256": "0f45a8d759d28900877dae5b3a82957a359eee8aa500b252d6d27748e8920782",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/regression_gates.py",
+      "kind": "source_or_test",
+      "size_bytes": 2538,
+      "sha256": "98ac0648d868aebb3e8bb56cf1b36fc986be5fc184736e71782ca5caabd4bd8c",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/reporting.py",
+      "kind": "source_or_test",
+      "size_bytes": 811,
+      "sha256": "d4002e450565dcd3ca8b2670e526925f7444cbbeaf785a410a3ee39d997f6a33",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/research_report.py",
+      "kind": "source_or_test",
+      "size_bytes": 1384,
+      "sha256": "dcc152ba961f7fddb1298be72d5d099a5833af9a138796dac861dcb6c158a6d1",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "src/prompt_robustness_suite/suite.py",
+      "kind": "source_or_test",
+      "size_bytes": 849,
+      "sha256": "83ffc17449164bd5c38698fa5e253d5198fb0e5eaca7e0677af5e43091e18053",
+      "review_use": "importable implementation"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "source_or_test",
+      "size_bytes": 123,
+      "sha256": "0002b5341b19e442565f99ea21759c27046cf13b6c7f9def582f0f383471a5f5",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_analysis.py",
+      "kind": "source_or_test",
+      "size_bytes": 233,
+      "sha256": "69a5deadc0e539bfae27ced1d704311162a4bdfc80c0d2a2116f2b8f78ad0a58",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_gates.py",
+      "kind": "source_or_test",
+      "size_bytes": 214,
+      "sha256": "bf9c3299f7349d96138fd713fec3c02aac3d8ef66c2ae9a72192f4c7dd2dc8da",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_maturity_assets.py",
+      "kind": "source_or_test",
+      "size_bytes": 958,
+      "sha256": "7a1a4179ecc7e70a2ccedea971186325308bb2fcb22e478557c83620f79166d4",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_real_experiment_artifacts.py",
+      "kind": "source_or_test",
+      "size_bytes": 1187,
+      "sha256": "7ada364b78f2151dbcd3ef56e72510e52451c83b3642efa5d33647539b28949e",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_real_prompt_ab_eval.py",
+      "kind": "source_or_test",
+      "size_bytes": 339,
+      "sha256": "8ee7d99c090e4c29c1c2bb092e63cd75dc9bd632b4c52c09e28b03f94292a073",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_reporting.py",
+      "kind": "source_or_test",
+      "size_bytes": 307,
+      "sha256": "2d0728519d8580e3fabd3fa0876a4d0a1ba2cc13f8a1617df436323b580f765a",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_suite.py",
+      "kind": "source_or_test",
+      "size_bytes": 335,
+      "sha256": "f098b4ca9a64431d460cda0a766c823373697c6c38eecbbd7a3d6b14d183a6a7",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_top_tier_quality_gate.py",
+      "kind": "source_or_test",
+      "size_bytes": 1942,
+      "sha256": "ef892c5898daa21756e3ce7620a2d9d09023d7ecfc7f93b73cd086df91ff9859",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "tests/test_v2_research_artifacts.py",
+      "kind": "source_or_test",
+      "size_bytes": 1489,
+      "sha256": "c0b5d5fa3d6744af99ff7ee8d844df24f340518b59a010b68514ac0709be1d10",
+      "review_use": "validation surface"
+    },
+    {
+      "path": "reports/real_prompt_injection_ab_eval.json",
+      "kind": "structured_result",
+      "size_bytes": 239,
+      "sha256": "8b49c03ccf2a81ff31b85e19b280968504cab21a6d931057e7a5e76dfe0e0bc4",
+      "review_use": "supporting artifact"
+    },
+    {
+      "path": "reports/results/artifact_manifest.json",
+      "kind": "structured_result",
+      "size_bytes": 15650,
+      "sha256": "aa52ae791206ce7adcda5c813729db4d4be26be534eb9389c2f598ca775933cc",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/experiment_index.json",
+      "kind": "structured_result",
+      "size_bytes": 3149,
+      "sha256": "f1a1306a9009220704423bcea1ec78fdca52abe88dda408410f8e0fd1d20aa8f",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/prompt_robustness_metrics.json",
+      "kind": "structured_result",
+      "size_bytes": 935,
+      "sha256": "ad85bd82d187f053adda5a2c925479611f8a69583a8aa5283de616ea4384d8b6",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/reproducibility_manifest.json",
+      "kind": "structured_result",
+      "size_bytes": 1413,
+      "sha256": "245e2aedf601281d3d8aa73b22098f0fbf2ede5ea1af8fe7ed37e4c90270aa3e",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/top_tier_quality_gate.json",
+      "kind": "structured_result",
+      "size_bytes": 642,
+      "sha256": "71244a72621a12cff701385aa51ed2a5e268d6b531403ad4e19a3556a0b14ac1",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_clustered_failures.json",
+      "kind": "structured_result",
+      "size_bytes": 20078,
+      "sha256": "b73e8daa27700ca09ca31e15175361958b562b5dfba641fca25a8fcee38ef37b",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "reports/results/v2_failure_analysis.json",
+      "kind": "structured_result",
+      "size_bytes": 5512,
+      "sha256": "e82c412ec754de846494f254a1cc4180a1c075a42d4579c95844e0648f139bc7",
+      "review_use": "measured metrics, indexes, or audit tables"
+    },
+    {
+      "path": "notebooks/maturity_walkthrough.ipynb",
+      "kind": "walkthrough_or_notebook",
+      "size_bytes": 2072,
+      "sha256": "6b5c6a9e495ecd7e97cd7e755909dac5549375bbfd999ce1c2a8111646d86b5b",
+      "review_use": "walkthrough or original notebook evidence"
+    }
+  ]
+}

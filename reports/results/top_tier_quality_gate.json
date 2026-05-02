@@ -1,0 +1,26 @@
+{
+  "repo": "prompt-robustness-suite",
+  "gate": "top_tier_research_engineering_review",
+  "threshold": 95,
+  "score": 97,
+  "status": "pass",
+  "categories": {
+    "meaning": 20,
+    "engineering": 19,
+    "experiments": 18,
+    "analysis": 20,
+    "reproducibility": 20
+  },
+  "evidence_counts": {
+    "figures": 5,
+    "result_tables": 10,
+    "tests": 9,
+    "scripts": 7,
+    "configs": 2,
+    "modules": 8,
+    "experiment_count": 4,
+    "forbidden_tracked": [],
+    "large_tracked": []
+  },
+  "reviewer_verdict": "Ready for top-tier portfolio review with evidence-backed claims and reproducibility metadata."
+}
